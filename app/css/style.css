@@ -1,0 +1,162 @@
+html,body,div,form,fieldset,legend,label,h1,h2,h3,h4,h5,h6,p,ul,dl,dt,dd,figure,figcaption{
+margin: 0;
+padding: 0;
+}
+
+body{
+	background-color: #1e1e1e;
+}
+
+img{
+	max-width: 100%;
+}
+
+a{
+	color:#ec0b7a;
+}
+
+#space{
+	background-color: #ec0b7a;
+	height: 400px;
+	margin-bottom: 40px;
+}
+#space h1{
+	font-family: cambria;
+	text-align: center;
+}
+
+#tags{
+	color: #9f9f9f;
+	font-size: 10px;
+	padding-bottom: 10px;
+}
+
+p{
+	color: #fbfbfb;
+	line-height: 1.5;
+}
+
+#me{
+	height: 400px;
+	float: right;
+	margin-right: 190px;
+	/*margin-top: -30px;*/
+}
+
+#name{
+	margin-top: 30px;
+	margin-left: 190px;
+}
+
+.work{
+	margin-bottom: 30px;
+}
+
+h2{
+	text-align: center;
+}
+
+.work h2, p{
+	/*text-align: center;*/
+	padding-bottom: 10px;
+}
+
+nav{
+	background-color: #ec0b7a;
+	margin-bottom: 40px;
+}
+
+nav ul{
+	float: right;
+	list-style-type: none;
+	/*color: #1e1e1e;*/
+}
+nav ul li{
+	display: inline-block;
+}
+
+
+/*------------------------Media Queries-----------------------------*/
+@media screen and (max-width: 1295px) {
+	#me{
+		float: none;
+		margin-left: 540px;
+	}
+	#space{
+		height: 700px;
+	}
+	#name{
+		margin-left: 350px;
+	}
+}
+
+@media screen and (max-width: 1017px) {
+	#me{
+		float: none;
+		margin-left: 390px;
+	}
+	#space{
+		height: 700px;
+	}
+	#name{
+		margin-left: 180px;
+	}
+}
+
+@media screen and (max-width: 835px) {
+	#me{
+		float: none;
+		margin-left: 290px;
+	}
+	#space{
+		height: 700px;
+	}
+	#name{
+		margin-left: 80px;
+	}
+}
+
+@media screen and (max-width: 733px) {
+	#me{
+		float: none;
+		margin-left: 250px;
+	}
+	#space{
+		height: 700px;
+	}
+	#name{
+		margin-left: 50px;
+	}
+}
+
+@media screen and (max-width: 701px) {
+	#me{
+		float: none;
+		margin-left: 220px;
+	}
+	#space{
+		height: 700px;
+	}
+	#name{
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 666px) {
+	#me{
+		/*float: none;
+		margin-left: 200px;*/
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+	}
+	#space{
+		height: 700px;
+	}
+	#name{
+		margin-left: 0;
+	}
+	#space{
+		height: 650px;
+	}
+}

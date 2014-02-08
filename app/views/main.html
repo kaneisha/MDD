@@ -1,0 +1,110 @@
+<!--  <div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">MDD</h3>
+</div>
+
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
+</div>
+
+<div class="row marketing">
+  <h4>HTML5 Boilerplate</h4>
+  <p>
+    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+  </p>
+
+  <h4>Angular</h4>
+  <p>
+    AngularJS is a toolset for building the framework most suited to your application development.
+  </p>
+
+  <h4>Karma</h4>
+  <p>Spectacular Test Runner for JavaScript.</p>
+</div>
+
+<div class="footer">
+  <p>♥ from the Yeoman team</p>
+</div> -->
+
+
+<div id="space">
+  <img src="images/whipple.png" id="name">
+  <img src="images/fb.png" id="me">
+  <!-- <input type="text" ng-model="user.fName" />
+  <input type="text" ng-model="user.lName" /> -->
+  <!-- <button ng-click="saveData()">save</button> -->
+  <!-- {{remoteData}} -->
+  <!-- {{remoteData.activeUser}} -->
+
+  <!-- <article ng-repeat="item in remoteData.activeUser">
+    <h2>{{item.title}}[{{$index + 1}}]</h2>
+    <!-- <p class="well">{{item.imgUrl}}</p>
+  </article> -->
+
+</div>
+
+<div class="container" >
+      <div class="work eight columns" ng-repeat="item in remoteData.activeUser">
+      <img src="{{item.imgUrl}}" width="400" height="200" />
+      <p id="tags">Tags: {{item.tags}}</p>
+      <h2>{{item.title}}</h2>
+      <p>{{item.desc}}</p>
+      <a href="#/detail/{{item.id}}">Click for Details</a>
+    </div>
+</div>
+
+   <!--   <div class="work eight columns">
+      <img src="images/celiac2.png" />
+      <p id="tags">Tags: ActionScript 3,Adobe Flash,Nutrionix API</p>
+      <h2>{{item.title}}[{{$index + 2}}]</h2>
+      <p>Celiac Tracker is an application that lets you check the ingredients in a food item. It's main purpose is to make it easy for those with Celiac Disease see what they can and cannot eat while they're on the go. The app was made for a project in my Deployment of Flash Projects class. The API used for this project was the Nutrionix API.</p>
+      <a href="#/detail/213">Click for Details</a>
+    </div> -->
+
+</div>
+<!-- <div class="container">
+    <div class="work eight columns">
+      <img src="images/tornflesh.png" width="400" height="200" />
+      <p id="tags">Tags: Citrus Engine,ActionScript 3,Adobe Flash</p>
+      <h2>Torn Flesh</h2>
+      <p>Torn Flesh is a Flash game made by myself and Mike Miller for a group project in my Deployment of Flash Projects class. Built using ActionScript 3 and a platform called Citrus Engine. Citrus Engine was made specifically for a side scrolling game but we managed to be able to put a lot more to it into the game. Credit for the design of the game goes to Jeremy McGraw. </p>
+      <a href="#/detail/213">Click for Details</a>
+    </div>
+
+
+
+    <div class="work eight columns">
+      <img src="images/tache.png" width="400" height="200"  />
+      <p id="tags">Tags: HTML,CSS,JavaScript,JQuery</p>
+      <h2>Tache Task Management</h2>
+      <p>Tache is a task management application. Designed using HTML and CSS this project was made for my Scripting Web Applications class. Other languages used included JavaScript and JQuery. It is a single page application and a database was used to store it's information. With this app one can plan their day out with individual tasks to go under each project, along with a list of clients.</p>
+      <a href="#/detail/213">Click for Details</a>
+    </div>
+</div> -->
+<!-- <div class="container">
+
+    <div class="work eight columns">
+      <img src="images/herdiary.png" width="300" height="200" />
+      <p id="tags">Tags: HTML,CSS,Node.js,Mongo DB</p>
+      <h2>Her Diary</h2>
+      <p>Her Diary is a blog site I made for my Advanced Server Side Language class. It is a blog designed specifically for teenage girls given the name Her Diary. Node.js was the framework used for this project. You can read all post, create a post, update a post, and delete a post. mongo was the database used to store the post information.</p>
+      <a href="#/detail/213">Click for Details</a>
+    </div>
+
+    <div class="work eight columns">
+      <img src="images/cheer.png" width="400" height="200"  />
+      <p id="tags">Tags: HTML,CSS,JavaScript,JQuery,Firebase</p>
+      <h2>Cheer Nation</h2>
+      <p>Cheer Nation is my latest project. It was made for my Streaming Media Servers class, with the goal being to create a video player. Using JavaScript and JQuery a user can play, pause, seek, and record a video. Firebase was used so the user can login with Twitter and Github and leave a comment.</p>
+      <a href="#/detail/213">Click for Details</a>
+    </div>
+ </div>
