@@ -69,10 +69,84 @@ nav{
 nav ul{
 	float: right;
 	list-style-type: none;
+	margin-top: -23px;
 	/*color: #1e1e1e;*/
 }
 nav ul li{
 	display: inline-block;
+	margin-right: 15px;
+	font-weight: bold;
+	font-family: georgia;
+}
+
+nav a{
+	color: #1e1e1e;
+	text-decoration: none;
+}
+
+/*-------------------------Admin Form--------------------------------*/
+#admin_form{
+	background-color: #ec0b7a;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	display: block;
+	border-radius: 8px;
+	height: 520px;
+}
+
+fieldset{
+	border: none;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	padding-top: 10px;
+}
+
+input{
+	/*float: right;*/
+	margin-right: 50px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display: block;
+	border:solid 1px #ccc;
+	height: 25px;
+	width: 350px;
+
+
+}
+
+label{
+	font-family: georgia;
+	text-align: right;
+	font-weight: bold;
+	/*float: left;*/
+}
+
+textarea{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width: 350px;
+	height: 150px;
+	border:solid 1px #ccc;
+}
+
+#submit{
+	/*float: right;*/
+	margin-left: 10px;
+	width:90px;
+	background: #fff;
+	color: #ec0b7a;
+	font-family: georgia;
+	font-weight: bold;
+	font-size: 15pt;
+	height: 30px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: none;
 }
 
 

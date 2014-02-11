@@ -11,11 +11,15 @@ angular.module('mddApp', [
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'ProjectList'
       })
       .when('/detail/:id', {
         templateUrl : 'views/details.html',
         controller : 'ProjectDetail'
+      })
+      .when('/admin_form', {
+        templateUrl : 'views/admin.html',
+        controller : 'AdminForm'
       })
       .otherwise({
         redirectTo: '/'

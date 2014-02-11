@@ -5,7 +5,7 @@ angular.module('mddApp')
 	//Firebase Connection
 	.factory('FireConn', ['$firebase', function ($firebase){
 
-		var url = 'https://whipple.firebaseIO.com',
+		var url = 'https://whipple.firebaseIO.com/activeUser',
 		ref = new Firebase( url );
 
 		return $firebase( ref );

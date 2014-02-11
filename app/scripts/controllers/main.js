@@ -4,6 +4,7 @@ var App = angular.module('mddApp')
   .controller('MainCtrl', ['$scope', 'FireConn', function($scope, FireConn) {
 
   FireConn.$bind($scope, 'remoteData');
+  // console.log(FireConn);
 
   $scope.saveData = function(){
 	//$scope.remoteData.activeUser = $scope.user;
@@ -54,18 +55,35 @@ var App = angular.module('mddApp')
     ];
 }]);
 
-App.controller('ProjectList', function($scope) {
+App.controller('AdminForm', ['$scope', 'FireConn', function($scope, FireConn) {
 
-		$scope.actionTime = function(){
-			console.log('user', $scope.user);
-		};
-	});
+			$scope.addData = function(){
 
-App.controller('ProjectDetail', function($scope, $routeParams){
+				FireConn.$add($scope.item);
+
+			};
+
+		}]);
+
+App.controller('ProjectList', ['$scope', 'FireConn', function($scope, FireConn) {
+
+		// $scope.actionTime = function(){
+		// 	console.log('user', $scope.user);
+		// };
+		//FireConn.$bind($scope, 'items');
+
+		$scope.items = FireConn;
+	}]);
+
+App.controller('ProjectDetail', ['$scope', '$routeParams', 'FireConn', function($scope, $routeParams, FireConn){
 
 		$scope.IdDisplay = $routeParams.id;
-		var title = $routeParams.title;
-		$scope.pTitle = title;
 
-		console.log('Loading Detail', $routeParams.id);
-	});
+		var free = FireConn.$child($routeParams.id);
+		console.log(free);
+
+		$scope.item = FireConn.$child($routeParams.id);
+
+		// console.log('Loading Detail', $routeParams.id);
+		// console.log(FireConn);
+	}]);

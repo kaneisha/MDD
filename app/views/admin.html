@@ -1,0 +1,33 @@
+<nav>
+	<h2>Kaneisha Whipple</h2>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="#/admin_form">Add Project</a></li>
+	</ul>
+</nav>
+
+<div id="admin_form">
+
+<fieldset>
+	<label>Project ID:
+	<input type="text" ng-model="item.id" value="" /></label>
+</fieldset>
+<fieldset>
+	<label>Project Image URL:</label>
+	<input type="text" ng-model="item.imgUrl" value="" />
+</fieldset>
+<fieldset>
+	<label>Project Title:</label>
+	<input type="text" ng-model="item.title" value="" />
+</fieldset>
+<fieldset>
+	<label>Project Tags:</label>
+	<input type="text" ng-model="item.tags" value="" />
+</fieldset>
+<fieldset>
+	<label>Project Description:</label>
+	<textarea class="desc-box" type="text" ng-model="item.desc" value="" ></textarea>
+</fieldset>
+<a href="/"><button id="submit" ng-click="addData()">Save</button></a>
+
+</div>
