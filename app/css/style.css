@@ -85,7 +85,7 @@ nav a{
 }
 
 /*-------------------------Admin Form--------------------------------*/
-#admin_form{
+.admin_form{
 	background-color: #ec0b7a;
 	width: 400px;
 	margin-left: auto;
@@ -232,5 +232,17 @@ textarea{
 	}
 	#space{
 		height: 650px;
+	}
+}
+
+@media screen and (max-width: 554px){
+	nav{
+		height: 90px;
+	}
+
+	nav ul{
+		float: none;
+		text-align: center;
+		margin-top: 15px;
 	}
 }

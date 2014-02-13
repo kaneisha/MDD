@@ -7,15 +7,12 @@
   <!-- {{remoteData}} -->
   <!-- {{remoteData.activeUser}} -->
 
-  <!-- <article ng-repeat="item in remoteData.activeUser">
-    <h2>{{item.title}}[{{$index + 1}}]</h2>
-    <!-- <p class="well">{{item.imgUrl}}</p>
-  </article> -->
-
 </div>
 
 <div style="margin-left:240px; margin-bottom:50px;">
   <a href="#/admin_form">Add A Project</a>
+  <a ng-click="loginObj.$login('github')">Login With Github</a>
+  <a ng-show="loginObj.user" ng-click="loginObj.$logout()">Logout{{loginObj.user.username}}</a>
 </div>
 
 <div class="container" >
@@ -30,11 +27,3 @@
 </div>
 
 <!-- ng-model for input fields -->
-
-   <!--   <div class="work eight columns">
-      <img src="images/celiac2.png" />
-      <p id="tags">Tags: ActionScript 3,Adobe Flash,Nutrionix API</p>
-      <h2>{{item.title}}[{{$index + 2}}]</h2>
-      <p>Celiac Tracker is an application that lets you check the ingredients in a food item. It's main purpose is to make it easy for those with Celiac Disease see what they can and cannot eat while they're on the go. The app was made for a project in my Deployment of Flash Projects class. The API used for this project was the Nutrionix API.</p>
-      <a href="#/detail/213">Click for Details</a>
-    </div>

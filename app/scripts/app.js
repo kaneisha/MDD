@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('mddApp', [
+var App = angular.module('mddApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
@@ -25,3 +25,11 @@ angular.module('mddApp', [
         redirectTo: '/'
       });
   });
+
+/*global Firebase*/
+App.run(['$firebaseSimpleLogin', '$rootScope', function($firebaseSimpleLogin, $rootScope){
+
+    var dataRef = new Firebase('https://whipple.firebaseIO.com');
+    $rootScope.loginObj = $firebaseSimpleLogin(dataRef);
+    console.log($rootScope.loginObj);
+  }]);

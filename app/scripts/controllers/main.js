@@ -10,13 +10,13 @@ var App = angular.module('mddApp')
 	//$scope.remoteData.activeUser = $scope.user;
 		$scope.remoteData.activeUser = [{
 			title : 'Blessed Thoughts Inc. Greeting Cards',
-			imgUrl : 'images/blessedthoughts2.png',
+			imgUrl : 'images/blessedthoughts.png',
 			tags : 'HTML,CSS',
 			id : 0,
 			desc : 'Blessed Thoughts Inc. is a greeting card company. The project was done as a redesign for my Web Standards Project class. The main point of the project was design skills so it is strictly HTML and CSS. It is a responsive site made to fit all mobile devices. No framework was used, meaning I wrote all the media queries.'
 		},{
 			title : 'Celiac Tracker',
-			imgUrl : 'images/celiac2.png',
+			imgUrl : 'images/celiac.png',
 			tags : 'ActionScript 3,Adobe Flash,Nutrionix API',
 			id : 1,
 			desc : 'Celiac Tracker is an application that lets you check the ingredients in a food item. It\'s main purpose is to make it easy for those with Celiac Disease see what they can and cannot eat while they\'re on the go. The app was made for a project in my Deployment of Flash Projects class. The API used for this project was the Nutrionix API.'
@@ -73,6 +73,10 @@ App.controller('ProjectList', ['$scope', 'FireConn', function($scope, FireConn) 
 		//FireConn.$bind($scope, 'items');
 
 		$scope.items = FireConn;
+
+		//var dataRef = new Firebase('https://whipple.firebaseIO.com');
+
+
 	}]);
 
 App.controller('ProjectDetail', ['$scope', '$routeParams', 'FireConn', function($scope, $routeParams, FireConn){
