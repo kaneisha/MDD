@@ -39,10 +39,12 @@ header{
 	text-align: center;
 	font-family: 'arial black';
 	margin-bottom: 20px;
+	color: black;
 }
 
 p{
-	font-family: arial;
+	font-family: georgia;
+	color: white;
 	/*text-align: center;*/
 }
 
@@ -138,6 +140,8 @@ textarea{
 textarea{
 	margin-left: 0px;
 	max-width: 265px;
+}
 
-
+p{
+	padding-left: 5px;
 }
